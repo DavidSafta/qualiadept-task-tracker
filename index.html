@@ -1,16 +1,24 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ro">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Task Tracker Sandbox</title>
-  </head>
-  <body>
-    <main>
-      <section id="practice-section">
-        <h1>Task Tracker Practice</h1>
-        <button type="submit" data-testid="submit-btn">Trimite</button>
-      </section>
-    </main>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <title>Task Tracker</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Task Tracker</h1>
+      <button data-testid="btn-login">Log In</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="add-task-section">
+      <form>
+        <input type="text" id="task-input" placeholder="Nume Task">
+        <button type="submit" data-testid="submit-btn">Adaugă Task</button>
+      </form>
+    </section>
+  </main>
+</body>
 </html>

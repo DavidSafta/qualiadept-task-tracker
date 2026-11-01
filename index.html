@@ -26,15 +26,16 @@
 
     <section class="task-input-section">
       <form id="add-task-form">
-        <input type="text" id="task-name" placeholder="Nume Task">
-        <button type="submit" data-testid="submit-task-btn" disabled>Salvează Task</button>
+        <input type="text" id="task-name" data-testid="input-task-name" placeholder="Nume Task">
+        <button type="submit" id="submit-task-btn" data-testid="submit-task-btn" disabled>Salvează Task</button>
+        <small id="error-msg" class="error-text" data-testid="error-message" style="display: none;">Numele task-ului nu poate fi gol sau duplicat!</small>
       </form>
     </section>
 
     <section class="task-list-section">
       <h2>Task-uri Active</h2>
       <p id="loading-msg">Se încarcă task-urile...</p>
-      <ul id="active-tasks-list"></ul>
+      <ul id="active-tasks-list" data-testid="task-list"></ul>
     </section>
 
     <section class="task-history-section">
